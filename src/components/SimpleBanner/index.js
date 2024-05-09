@@ -1,0 +1,1 @@
+export { SimpleBanner } from "./SimpleBanner";

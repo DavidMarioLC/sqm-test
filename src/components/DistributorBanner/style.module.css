@@ -1,0 +1,56 @@
+.promotionBanner {
+  border-radius: 16px;
+  background-color: var(--color-02);
+  overflow: hidden;
+}
+.promotionBannerWrapperImage {
+  margin: 0;
+}
+.promotionBannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 264px;
+}
+
+.promotionBannerContent {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  padding-inline: 16px;
+}
+
+.promotionBannerTitle {
+  color: var(--color-01);
+  position: relative;
+}
+
+.promotionBannerTitle::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 40px;
+  bottom: -12px;
+  background-color: var(--color-21);
+}
+
+@media (width>=768px) {
+  .promotionBanner {
+    display: flex;
+    max-width: 1072px;
+    margin: 0 auto;
+  }
+  .promotionBanner > * {
+    width: 50%;
+  }
+  .promotionBannerContent {
+    padding: 48px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .promotionBannerImage {
+    max-height: 365px;
+  }
+}

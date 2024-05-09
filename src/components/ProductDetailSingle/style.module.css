@@ -1,0 +1,69 @@
+/* desktop */
+.desktopProductDetailContent {
+  gap: 72px;
+}
+.desktopProductDetailWrapperImage {
+  background-color: var(--color-23);
+  border-radius: 16px;
+  padding: 48px;
+  max-height: 568px;
+}
+
+.desktopProductDetailImage {
+  object-fit: contain;
+}
+
+.desktopProductDetailMaxWidthInformation {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+.productImage {
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .productImage {
+    padding-bottom: 50px;
+  }
+}
+
+.farmingRelatedImage {
+  width: 44px;
+  height: 44px;
+}
+
+.farmingRelatedImageEmpty {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-23);
+  border-radius: 100%;
+}
+
+.mobileBanner {
+  background-color: #f4f4f4;
+}
+
+.buttonMoreFiles {
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #0033a1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonMoreFilesTooltip {
+  background: white !important;
+  opacity: 1 !important;
+  box-shadow: var(--shadow-strong-02);
+  border-radius: 12px !important;
+}
+
+.buttonMoreFilesPdf {
+  color: var(--color-21);
+  text-decoration: underline;
+}

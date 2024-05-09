@@ -1,0 +1,1 @@
+export { GridArticles } from "./GridArticles";

@@ -1,0 +1,41 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.bannerHigh {
+  height: 224px;
+}
+
+.bannerLow {
+  height: 140px;
+}
+
+.bannerTitle {
+  font-weight: bold;
+  font-size: var(--fs-26);
+  color: var(--color-01);
+  text-transform: capitalize;
+}
+
+@media (min-width: 992px) {
+  .bannerHigh {
+    height: 400px;
+  }
+
+  .bannerLow {
+    height: 240px;
+  }
+
+  .bannerImage {
+    width: 742px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .bannerTitle {
+    font-size: var(--fs-40);
+  }
+}

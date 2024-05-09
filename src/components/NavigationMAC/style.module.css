@@ -1,0 +1,21 @@
+.navigationLinks {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.navigationLinks > * {
+  flex: 1;
+}
+
+.navigationItem {
+  margin-bottom: 0;
+  padding-block: 16px;
+  border-bottom: 3px solid #bcbcbd;
+  text-align: center;
+}
+
+.navigationItemActive {
+  border-color: var(--color-21);
+  color: var(--color-07);
+}

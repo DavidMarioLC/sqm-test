@@ -1,0 +1,35 @@
+.radio {
+  accent-color: gray;
+}
+
+.radio:checked {
+  accent-color: white;
+}
+
+.radio {
+  --border-color: var(--color-21);
+  --default-state-color: var(--color-0);
+  --checked-state-color: var(--color-21);
+  height: 16px;
+  width: 16px;
+  appearance: none;
+  border-radius: 100%;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.radio::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: var(--default-state-color);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.radio:checked::before {
+  background-color: var(--checked-state-color);
+}

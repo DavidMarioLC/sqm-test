@@ -1,0 +1,1 @@
+export { RelatedProductsAside } from "./RelatedProductsAside";

@@ -1,0 +1,1 @@
+export { AcademyVideoCarousel } from "./AcademyVideoCarousel";

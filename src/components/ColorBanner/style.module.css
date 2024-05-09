@@ -1,0 +1,36 @@
+.banner {
+  padding-top: 24px;
+  padding-bottom: 56px;
+}
+.title {
+  color: var(--color-01);
+  font-size: var(--fs-26);
+  margin-bottom: 8px;
+  margin-top: 32px;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: var(--fs-18);
+  color: var(--color-01);
+}
+
+.maxWidth {
+  max-width: 592px;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+  .title {
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-size: var(--fs-40);
+  }
+
+  .paragraph {
+    font-size: var(--fs-20);
+  }
+}

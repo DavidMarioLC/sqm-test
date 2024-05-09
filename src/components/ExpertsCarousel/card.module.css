@@ -1,0 +1,21 @@
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--line-01);
+  padding-bottom: 24px;
+}
+
+.image {
+  border: 1px solid var(--line-01);
+  border-radius: 50%;
+}
+
+.name {
+  color: var(--color-02);
+  font-weight: bold;
+  font-size: var(--fs-20);
+}

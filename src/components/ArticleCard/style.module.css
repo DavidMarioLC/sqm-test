@@ -1,0 +1,69 @@
+.articleCard {
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 384px;
+  background-color: var(--color-01);
+  box-shadow: var(--shadow-strong-02);
+}
+
+.articleCardWraperImage {
+  width: 100%;
+  height: 206px;
+  overflow: hidden;
+}
+
+.articleCardImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 0.3s linear;
+}
+
+.articleCardBody {
+  padding: 24px 16px;
+}
+
+.articleCardTagLink {
+  background-color: var(--color-14);
+  color: var(--color-02);
+  padding: 4px 16px;
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 32px;
+  margin-bottom: 16px;
+}
+
+.articleCardTitle {
+  color: var(--color-02);
+  margin-bottom: 16px;
+  transition: all 0.3s linear;
+  font-weight: 400;
+
+  --max-lines: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
+}
+
+.articleCardTags {
+  color: var(--color-10);
+
+  --max-lines: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
+}
+
+/* hover */
+
+.articleCard:hover .articleCardImage {
+  transform: scale(1.2);
+  transition: all 0.3s linear;
+}
+
+.articleCard:hover .articleCardTitle {
+  text-decoration: underline;
+  transition: all 0.3s linear;
+}

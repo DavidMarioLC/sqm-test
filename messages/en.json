@@ -1,0 +1,34 @@
+{
+  "Home": {
+    "title": "Hello world!",
+    "text": "Ours"
+  },
+  "Application": {
+    "type": "Type of application"
+  },
+  "FeaturedArticles": {
+    "viewAllCategories": "See all categories"
+  },
+  "RelatedVideo": {
+    "title": " Video list"
+  },
+  "NavigationMAC": {
+    "brandsTitle": "Brands",
+    "applicationsTitle": "Applications",
+    "categoriesTitle": "Categories"
+  },
+  "Button": {
+    "download": "download",
+    "share": "Share",
+    "downloadBrochure": "Download brochure",
+    "downloadSheet": "Download safety sheet",
+    "downloadTechnique": "Download technical sheet",
+    "moreOptions": "More download options",
+    "viewAllProducts": "see all products",
+    "viewMoreVideos": "see more videos"
+  },
+  "disponibility": {
+    "text": "Available in",
+    "text2": "text2"
+  }
+}

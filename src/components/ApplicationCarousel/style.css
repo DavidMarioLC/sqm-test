@@ -1,0 +1,96 @@
+/*************************************
+>> applicaciton carousel
+**************************************/
+
+.applicationCarousel {
+  margin-inline: -16px;
+}
+
+.applicationCarousel .swiper-pagination {
+  transform: translateY(25px) !important;
+  bottom: initial !important;
+  top: initial !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.applicationCarousel .swiper-pagination-bullet {
+  background: transparent;
+  border: 1px solid var(--color-12);
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.applicationCarousel .swiper-pagination-bullet-active {
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-12);
+}
+
+.applicationCarousel__pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  color: var(--color-10);
+}
+
+@media (min-width: 992px) {
+  .applicationCarousel {
+    position: static !important;
+    margin-inline: 0 !important;
+  }
+
+  .applicationCarousel .swiper-button-prev {
+    left: 3vw;
+  }
+
+  .applicationCarousel .swiper-button-next {
+    right: 3vw;
+  }
+
+  .applicationCarousel .swiper-button-prev,
+  .applicationCarousel .swiper-button-next {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-21);
+    top: 47% !important;
+  }
+
+  .applicationCarousel .swiper-button-prev::after,
+  .applicationCarousel .swiper-button-next::after {
+    font-size: 24px;
+    color: var(--color-21);
+  }
+
+  .applicationCarousel__pagination {
+    margin-top: 62px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .applicationCarousel {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .applicationCarousel {
+    max-width: initial !important;
+    margin: initial !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .applicationCarousel .swiper-button-prev {
+    left: 13vw;
+  }
+
+  .applicationCarousel .swiper-button-next {
+    right: 13vw;
+  }
+}

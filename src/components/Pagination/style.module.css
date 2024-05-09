@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.listNumbers {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 18px;
+  margin: 0;
+}
+
+.numbers {
+  color: #656565;
+}
+
+.buttonPrev,
+.buttonNext {
+}
+
+.currentPage {
+  color: #008809;
+  text-decoration: underline;
+}

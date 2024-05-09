@@ -1,0 +1,84 @@
+.category {
+  border-radius: 32px;
+  background-color: gray;
+  color: var(--color-01);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 16px;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+}
+
+.noticias {
+  background-color: var(--color-02);
+}
+
+.title {
+  color: var(--color-02);
+}
+
+.iconCalendar,
+.iconTime {
+  color: var(--color-21);
+}
+.authorImage {
+  flex-shrink: 0;
+}
+.authorName {
+  color: var(--color-02);
+  margin-bottom: 0;
+}
+
+.authorOcupation {
+  margin-bottom: 0;
+}
+
+.content p {
+  line-height: 1.5;
+}
+
+.containerSingleBlog {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.content blockquote {
+  position: relative;
+  color: var(--color-02);
+  font-size: var(--fs-20);
+  padding-block: 48px;
+  margin-bottom: 0;
+  padding-left: 48px;
+  margin-block: 32px;
+}
+
+.content blockquote::before {
+  content: "\201C";
+  position: absolute;
+  top: -20px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 120px;
+
+  background: transparent;
+  pointer-events: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.socials {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-02);
+  color: var(--color-01);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

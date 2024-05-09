@@ -1,0 +1,141 @@
+.footer {
+  background-color: var(--color-14);
+  padding-block: 56px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-inline: 0;
+  margin: 0;
+}
+
+.footer a {
+  color: var(--color-09);
+}
+
+.footerLogo {
+  padding-bottom: 24px;
+}
+
+.footerLogo img {
+  width: 182px;
+  height: 95px;
+  object-fit: contain;
+}
+
+.footerSocial {
+  padding-block: 24px;
+}
+
+.footerSocial p {
+  margin-bottom: 24px;
+}
+
+.footerSocial ul {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footerSocial ul a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-02);
+  color: var(--color-01);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.footerSocial ul a:hover {
+  background-color: var(--color-21);
+}
+
+.footerSocial p {
+  font-weight: bold;
+  color: var(--color-08);
+}
+
+.footerLink {
+  padding-block: 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footerLink a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footerLink a:hover {
+  color: var(--color-02);
+  text-decoration: underline;
+}
+
+.footerCopy {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 16px;
+  max-width: 1216px;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.footerCopy a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footerLogo,
+.footerLink,
+.footerSocial {
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.15);
+}
+
+@media (width>=992px) {
+  .footerLogo img {
+    width: 206px;
+    height: 108px;
+  }
+  .footer {
+    background-color: var(--color-14);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footerLogo {
+    padding-top: 48px;
+  }
+
+  .footerCopy {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-block: 24px;
+  }
+
+  .footerLogo,
+  .footerLink,
+  .footerSocial {
+    border-bottom: none;
+  }
+
+  .footerSocial {
+    border-top: 1px solid hsla(0, 0%, 0%, 0.15);
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.15);
+    padding-block: 24px;
+  }
+}

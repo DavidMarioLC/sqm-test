@@ -1,0 +1,70 @@
+.buttonLanguage {
+  background: none;
+  border: none;
+  padding: 8px 0;
+  color: white;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.submenu {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: 250ms linear;
+  height: 100vh;
+  display: flex;
+}
+
+.submenuDefault {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.submenuOpen {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 250ms linear;
+}
+
+/* submenuTitle */
+.submenuTitle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.312);
+  padding-block: 16px;
+  color: var(--color-01);
+}
+
+.submenuTitle h2 {
+  margin-bottom: 0;
+}
+
+/* button close */
+.navigationButtonClose {
+  border: none;
+  background: none;
+  color: var(--color-01);
+}
+
+/* item */
+.navigationItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-01);
+  padding-block: 8px;
+}
+
+.checkboxMobile {
+  --border-color: white;
+  --default-state-color: black;
+  --checked-state-color: white;
+}

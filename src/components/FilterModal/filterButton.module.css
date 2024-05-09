@@ -1,0 +1,10 @@
+.button {
+  background-color: var(--color-18);
+  color: var(--color-02);
+  padding: 16px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

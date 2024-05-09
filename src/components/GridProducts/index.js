@@ -1,0 +1,1 @@
+export { GridProducts } from "./GridProducts";

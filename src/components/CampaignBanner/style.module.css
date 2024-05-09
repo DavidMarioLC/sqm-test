@@ -1,0 +1,58 @@
+/* campaignBanner */
+
+.campaignBanner {
+  position: relative;
+}
+
+.campaignBannerImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+  inset: 0;
+}
+
+.campaignBannerContent {
+  height: 496px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.campaignBannerContentName {
+  color: white;
+  text-transform: capitalize;
+}
+
+.campaignBannerContentName p:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.campaignBannerContentName p:last-child {
+  text-transform: capitalize;
+}
+
+/* BrandHeroBanner */
+@media (min-width: 992px) {
+  .campaignBanner {
+    margin-top: 77px;
+  }
+  .campaignBannerContent {
+    flex-direction: row-reverse;
+  }
+
+  .campaignBannerContent > * {
+    flex: 1;
+  }
+
+  .campaignBannerProductImage {
+    height: 100%;
+    object-fit: contain;
+    transform: translateY(-80px);
+  }
+}

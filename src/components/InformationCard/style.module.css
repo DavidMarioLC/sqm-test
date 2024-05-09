@@ -1,0 +1,63 @@
+.informationCard {
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 328px;
+  background-color: var(--color-01);
+}
+
+.informationCardWrapperImage {
+}
+
+.informationCardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.informationCardBody {
+  background-color: var(--color-18);
+  padding: 24px 16px 48px 16px;
+}
+
+.informationCardTitle {
+  color: var(--color-02);
+  font-weight: 700;
+  margin-bottom: 37px;
+  position: relative;
+}
+
+.informationCardTitle::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 40px;
+  background: var(--color-21);
+  left: 0;
+  bottom: -16px;
+}
+
+.informationCardResumen {
+  color: var(--color-05);
+  line-height: 24px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .informationCard {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .informationCard > * {
+    width: 50%;
+  }
+
+  .informationCardImage {
+    height: 100%;
+  }
+  .informationCardBody {
+    padding: 48px;
+  }
+}

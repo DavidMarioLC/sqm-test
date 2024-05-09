@@ -1,0 +1,72 @@
+.maxWidthFilters {
+  max-width: 768px;
+  margin-inline: auto;
+}
+
+/* label */
+.label {
+  font-size: var(--fs-16);
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* country selected  */
+.countrySelected {
+  border-radius: 8px;
+  border: 1px solid var(--line-01);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 9px;
+  max-width: 100%;
+  width: 328px;
+}
+
+.countryCities {
+  display: flex;
+  max-width: 100%;
+  width: 328px;
+}
+
+/* distributors list */
+
+.listDistributors {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 16px;
+  max-height: 100vh;
+  padding-inline: 16px;
+  padding-block: 16px;
+}
+
+/* map */
+
+.titleMap {
+  margin-bottom: 24px;
+  font-size: var(--fs-20);
+  color: var(--color-02);
+  font-weight: 400;
+}
+
+.iframeMap {
+  width: 100%;
+  height: 300px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .listDistributors {
+    height: 60vh;
+  }
+  .iframeMap {
+    height: 60vh;
+  }
+}
+
+.activeDistribuitor {
+  background-color: #f8f8f8;
+}

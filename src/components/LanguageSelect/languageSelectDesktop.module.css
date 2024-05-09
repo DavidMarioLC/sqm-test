@@ -1,0 +1,35 @@
+.selectLanguageWrapper {
+  position: relative;
+}
+
+.languageSelected {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  padding-inline: 12px;
+  border: none;
+}
+
+.listLanguages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--color-01);
+  box-shadow: var(--shadow-strong-02);
+  border-radius: 8px;
+  position: absolute;
+  z-index: 5;
+  right: 0;
+}
+
+.defaultMenuLanguage {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+.openMenuLanguage {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s linear;
+}

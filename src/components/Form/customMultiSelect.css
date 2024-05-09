@@ -1,0 +1,10 @@
+.rmsc.custom-multiple-select {
+  --rmsc-h: 45px;
+  --rmsc-radius: 8px;
+  z-index: 4;
+  width: 286px;
+}
+
+.rmsc.custom-multiple-select input {
+  accent-color: #0da600;
+}

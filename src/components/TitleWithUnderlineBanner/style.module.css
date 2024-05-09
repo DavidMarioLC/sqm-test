@@ -1,0 +1,17 @@
+.banner {
+  padding-top: 24px;
+  padding-bottom: 54px;
+}
+
+.title {
+  margin-top: 56px;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-block: 48px;
+  }
+  .title {
+    margin-top: 48px;
+  }
+}

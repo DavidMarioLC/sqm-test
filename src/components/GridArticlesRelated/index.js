@@ -1,0 +1,1 @@
+export { GridArticlesRelated } from "./GridArticlesRelated";

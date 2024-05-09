@@ -1,0 +1,26 @@
+.banner {
+  background-color: var(--color-23);
+  padding-top: 24px;
+  padding-bottom: 54px;
+}
+
+.title {
+  margin-top: 24px;
+  color: var(--color-02);
+  font-weight: bold;
+}
+
+.image {
+  margin-top: 24px;
+  text-align: center;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-block: 48px;
+  }
+  .title {
+    margin-top: 24px;
+  }
+}

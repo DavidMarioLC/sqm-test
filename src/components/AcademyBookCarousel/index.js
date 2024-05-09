@@ -1,0 +1,1 @@
+export { AcademyBookCarousel } from "./AcademyBookCarousel";

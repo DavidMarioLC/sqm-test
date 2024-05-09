@@ -1,0 +1,1 @@
+export { TitleWithImageBanner } from "./TitleWithImageBanner";

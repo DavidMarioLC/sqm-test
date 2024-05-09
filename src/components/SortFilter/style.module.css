@@ -1,0 +1,14 @@
+.sortFilterBox {
+  appearance: none;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 51, 102, 0.15);
+  font-weight: 400;
+  position: relative;
+  background-image: url('/chevron-down-select.svg');
+  background-size: 1rem;
+  background-position: calc(100% - 16px) center;
+  background-repeat: no-repeat;
+  outline: none;
+}
+

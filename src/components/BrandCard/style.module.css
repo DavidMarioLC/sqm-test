@@ -1,0 +1,41 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
+  border-radius: 16px;
+  transition: all 0.3s linear;
+}
+
+.productCardImage {
+  width: 100%;
+  height: 261px;
+  object-fit: contain;
+  transition: all 0.3s linear;
+}
+
+.productCardImageBrand {
+  width: 160px;
+  height: 24px;
+  object-fit: contain;
+  transition: all 0.3s linear;
+}
+
+.productCardName {
+  color: var(--color-08);
+}
+
+/* hover */
+.productCard:hover {
+  background-color: var(--color-26);
+  box-shadow: var(--shadow-strong-02);
+  transition: all 0.3s linear;
+}
+
+.productCard:hover .productCardImage,
+.productCard:hover .productCardImageBrand {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}

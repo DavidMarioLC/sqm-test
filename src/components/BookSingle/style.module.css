@@ -1,0 +1,15 @@
+.collapse {
+  height: 200px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, white 1%, transparent 100%);
+}
+.collapsed {
+  height: auto;
+}
+.buttonCollapse {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: var(--color-07);
+  text-decoration: underline;
+}

@@ -1,0 +1,33 @@
+.content iframe {
+  height: 250px;
+}
+
+.content h2 {
+  color: var(--color-02);
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.content h2::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: var(--color-21);
+  bottom: -10px;
+}
+
+.content p {
+  margin-bottom: 32px;
+}
+
+.content a {
+  color: var(--color-02);
+}
+
+@media (min-width: 768px) {
+  .content iframe {
+    height: 567px;
+  }
+}

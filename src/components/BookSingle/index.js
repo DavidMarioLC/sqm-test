@@ -1,0 +1,1 @@
+export { BookSingle } from "./BookSingle";

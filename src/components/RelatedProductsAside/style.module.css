@@ -1,0 +1,58 @@
+.title {
+  font-size: var(--fs-20);
+  color: #000000;
+  margin-bottom: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  overflow-y: auto;
+  scrollbar-color: #d2d2d2 #f2f2f2;
+  scrollbar-width: thin;
+  mask-image: linear-gradient(to bottom, white 85%, transparent 100%);
+}
+
+.card {
+  border-bottom: 1px solid var(--line-01);
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.brandImage {
+  height: 82px;
+  width: 80px;
+}
+.brandNameImage {
+  display: block;
+  margin-bottom: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.brandName {
+  font-weight: 400;
+  font-size: var(--fs-16);
+}
+
+.link:first-child .card {
+  border-top: 1px solid var(--line-01);
+}
+
+.link {
+  transition: all 250ms ease;
+}
+
+.link:hover .card {
+  box-shadow: var(--shadow-strong-02);
+  background-color: #f8f8f8;
+  transition: all 250ms ease;
+  border-bottom: none;
+  border-top: none;
+}

@@ -1,0 +1,133 @@
+.compatibility {
+  background-color: var(--color-23);
+}
+.card {
+  border-radius: 16px;
+  border: 1px solid var(--color-12);
+  background-color: var(--color-01);
+}
+
+.cardWrapperImage {
+  padding: 48px 24px 24px 24px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cardImage {
+  width: 100%;
+  display: block;
+  max-width: 321px;
+  margin: 0 auto;
+  height: 202px;
+  object-fit: contain;
+}
+
+.divider {
+  height: 4px;
+  background-color: var(--color-12);
+}
+
+.cardTitle {
+  color: var(--color-02);
+  position: relative;
+}
+
+.cardTitle::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 40px;
+  bottom: -10px;
+  background-color: var(--color-21);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cardProductName {
+}
+
+.cardDescription {
+}
+
+.cardBody {
+  padding: 24px 16px 24px 16px;
+}
+
+/* results */
+.results {
+  padding: 24px;
+  border: 1px solid var(--color-12);
+  border-radius: 8px;
+}
+.results h4 {
+  color: var(--color-02);
+}
+
+.references {
+  border-top: 1px solid var(--color-12);
+  padding-top: 24px;
+  margin-top: 24px;
+}
+
+.references h4 {
+  color: var(--color-19);
+}
+
+.resultList {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width>=992px) {
+  .card {
+    display: flex;
+  }
+
+  .cardWrapperImage {
+    padding: 48px;
+  }
+
+  .cardBody {
+    padding-inline: 48px;
+    padding-block: 48px;
+  }
+
+  .cardTitle::before {
+    left: 0;
+    transform: translateX(0%);
+  }
+
+  .resultList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 24px;
+    gap: 8px;
+  }
+
+  .cardImage {
+    height: auto;
+  }
+
+  .divider {
+    height: inherit;
+    width: 1px;
+    background-color: var(--color-12);
+    display: block;
+  }
+}
+
+/* leyend  */
+
+.compatible {
+  color: #0da600;
+}
+
+.notSupported {
+  color: #a53023;
+}
+
+.withRestrictions {
+  color: #0033a1;
+}

@@ -1,0 +1,10 @@
+.content a {
+  color: var(--color-02);
+  text-decoration: underline;
+}
+
+.content img {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}

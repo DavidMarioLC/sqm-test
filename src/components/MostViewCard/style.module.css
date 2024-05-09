@@ -1,0 +1,103 @@
+.mostViewCardLink {
+  counter-increment: itemCounter;
+  flex: 1;
+}
+
+.mostViewCardLink .mostViewCard {
+  border-top: 1px solid var(--line-01);
+}
+
+.mostViewCardLink:last-child .mostViewCard {
+  border-bottom: 1px solid var(--line-01);
+}
+
+.mostViewCard {
+  display: flex;
+  gap: 16px;
+  padding-block: 22px;
+}
+
+.mostViewCardWrapperImage {
+  position: relative;
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.mostViewCardWrapperImage::before {
+  content: counter(itemCounter);
+  position: absolute;
+  background-color: hsla(221, 100%, 32%, 0.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: var(--fs-40);
+  color: var(--color-01);
+  z-index: 3;
+}
+
+.mostViewCardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 250ms ease;
+}
+
+.mostViewCardTag {
+  border: 1px solid var(--color-02);
+  color: var(--color-02);
+  padding: 4px 16px;
+  border-radius: 32px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mostViewCardResumen {
+  color: var(--color-09);
+  --max-lines: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
+}
+
+@media (min-width: 992px) {
+  .mostViewCard {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .mostViewCardLink .mostViewCard {
+    border: none;
+  }
+
+  .mostViewCardLink:last-child .mostViewCard {
+    border: none;
+  }
+
+  .mostViewCardWrapperImage {
+    width: 142px;
+    height: 142px;
+  }
+
+  .mostViewCardWrapperImage::before {
+    font-size: 63px;
+  }
+
+  .mostViewCardLink:hover .mostViewCardImage {
+    transform: scale(1.2);
+    transition: all 250ms ease;
+  }
+
+  .mostViewCardLink:hover .mostViewCardResumen {
+    color: var(--color-02);
+    text-decoration: underline;
+  }
+}

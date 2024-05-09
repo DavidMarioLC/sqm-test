@@ -1,0 +1,1 @@
+export { ImageBannerExtended } from "./ImageBannerExtended";

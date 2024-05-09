@@ -1,0 +1,94 @@
+.carouselNavigationHeader {
+  padding-inline: 46px !important;
+  padding-bottom: 56px !important;
+}
+/* pagination */
+
+.carouselNavigationHeader .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselNavigationHeader .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid var(--color-12);
+  background: white;
+}
+
+.carouselNavigationHeader .swiper-pagination .swiper-pagination-bullet-active {
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-12);
+}
+
+.carouselNavigationHeader .swiper-button-prev,
+.carouselNavigationHeader .swiper-button-next {
+  border: 1px solid var(--color-21);
+  border-radius: 100%;
+  height: 44px;
+  width: 44px;
+}
+.carouselNavigationHeader .swiper-button-prev::after,
+.carouselNavigationHeader .swiper-button-next::after {
+  font-size: 24px;
+  color: var(--color-21);
+}
+
+/* carousel navigation card */
+.carouselNavigation__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.carouselNavigation__card figure {
+  width: 92px;
+  height: 92px;
+  border-radius: 100%;
+  border: 2px solid var(--color-12);
+  overflow: hidden;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.carouselNavigation__card figure::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.carouselNavigation__card:hover figure::before {
+  background-color: #24252521;
+}
+
+.carouselNavigation__card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+
+.carouselNavigation__card:hover img {
+  scale: 1.2;
+  transition: all 0.3s linear;
+}
+
+.carouselNavigation__card span {
+  font-size: var(--fs-14);
+}
+
+.carouselNavigation__card:hover span {
+  color: var(--color-21);
+  text-decoration: underline;
+  transition: all 0.3s linear;
+}
+
+.carouselNavigation__card:active span {
+  color: var(--color-12);
+  text-decoration: underline;
+}

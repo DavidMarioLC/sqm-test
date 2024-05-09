@@ -1,0 +1,255 @@
+/* base */
+.button {
+  /* reset */
+  background-color: transparent;
+  border: 0;
+
+  display: inline-flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 4px;
+  transition-duration: 0.15s;
+
+  /* solid */
+  &.solid {
+    /* variation:blue */
+    &.blue {
+      color: var(--color-01);
+      background-color: var(--color-02);
+    }
+
+    &.blue:hover {
+      background-color: var(--color-21);
+    }
+
+    /* variation:white */
+    &.white {
+      color: var(--color-02);
+      background-color: var(--color-01);
+    }
+
+    &.white:hover {
+      background-color: var(--color-21);
+      color: var(--color-01);
+    }
+
+    /* green */
+    &.green {
+      color: var(--color-01);
+      background-color: var(--color-21);
+    }
+
+    /* variant:gray */
+    &.gray {
+      background-color: var(--color-18);
+      color: var(--color-02);
+    }
+  }
+
+  /*outline */
+  &.outline {
+    border-width: 1px;
+    border-style: solid;
+    /* variation:blue */
+    &.blue {
+      border-color: var(--color-02);
+      color: var(--color-02);
+    }
+
+    &.blue:hover {
+      background-color: var(--color-21);
+      color: var(--color-01);
+      border-color: var(--color-21);
+    }
+    /* variation:white */
+    &.white {
+      border-color: var(--color-01);
+      color: var(--color-01);
+    }
+
+    &.white:hover {
+      background-color: var(--color-21);
+      color: var(--color-01);
+      border-color: var(--color-21);
+    }
+  }
+
+  /* solid and outline */
+  &.solid,
+  &.outline {
+    border-radius: 30px;
+    padding: 9px 2.5em;
+  }
+
+  &.solid:focus-within,
+  &.outline:focus-within {
+    background-color: hsla(79, 100%, 37%, 1);
+    color: var(--color-01);
+  }
+
+  &.outline:focus-within {
+    border-color: var(--color-12);
+  }
+
+  /* ghost */
+  &.ghost {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    &.green {
+      color: var(--color-07);
+    }
+
+    &.green:hover {
+      color: var(--color-12);
+    }
+
+    &.green:focus-within {
+      color: var(--color-02);
+    }
+
+    &.white {
+      color: var(--color-01);
+    }
+
+    &.white:hover {
+      color: var(--color-01);
+    }
+
+    &.white:focus-within {
+    }
+  }
+
+  /* onlyicon */
+  &.isOnlyIcon {
+    padding: 0;
+    width: 44px;
+    height: 44px;
+  }
+}
+.button:hover:disabled {
+  background-color: var(--color-02) !important;
+}
+
+.button:disabled:active {
+  scale: none;
+}
+
+.button:active {
+  scale: 0.95;
+  transition-duration: 0.15s;
+}
+
+/* buttonFixed */
+
+.buttonFixed {
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0px;
+  gap: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-21);
+  color: var(--color-01);
+  padding: 8px 16px 8px 8px;
+  position: fixed;
+  top: 126px;
+  left: 0;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .buttonFixed {
+    right: 0;
+    top: auto;
+    bottom: 20vh;
+    left: initial;
+    border-radius: 8px 0px 0px 8px;
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+}
+
+.buttonFixed__text {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.buttonFixed:hover {
+  width: max-content;
+  background-color: var(--color-07);
+}
+
+.buttonFixed:hover .buttonFixed__text {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* buttonGoToTop */
+.buttonGoToTop {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .buttonGoToTop {
+    display: none;
+  }
+}
+
+/* buttonDropdown */
+.buttonDropdown {
+  background-color: var(--color-01);
+  color: var(--color-02);
+  border-color: var(--color-02);
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+}
+
+.buttonDropdown:hover {
+  background-color: var(--color-21);
+  border-color: var(--color-21);
+  color: white;
+}
+
+.buttonDropdown.show {
+  background-color: var(--color-12);
+  border-color: var(--color-12);
+  color: white;
+}
+
+.buttonDropdown::after {
+  border: none;
+}
+
+.buttonDropdownMenu {
+  padding-block: 16px;
+}
+.buttonDropdownMenuItemTitle {
+  padding-inline: 16px;
+}
+
+.buttonDropdownMenuItem {
+  padding-inline: 16px;
+}
+
+.buttonDropdownMenuItem p,
+.buttonDropdownMenuItem:not(:first-child) {
+  color: var(--color-21);
+}
+
+/* disabled */
+
+.button:disabled {
+  opacity: 0.3;
+}

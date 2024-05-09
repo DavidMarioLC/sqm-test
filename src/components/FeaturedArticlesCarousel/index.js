@@ -1,0 +1,1 @@
+export { FeaturedArticlesCarousel } from "./FeaturedArticlesCarousel";

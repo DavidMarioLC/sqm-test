@@ -1,0 +1,1 @@
+export { MostViewCard } from "./MostViewCard";

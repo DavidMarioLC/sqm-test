@@ -1,0 +1,1 @@
+export { ColorBanner } from "./ColorBanner";

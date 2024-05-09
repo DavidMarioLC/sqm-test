@@ -1,0 +1,82 @@
+.applicationCardLink {
+}
+
+.applicationCard {
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 280px;
+  background-color: var(--color-01);
+  box-shadow: var(--shadow-strong-02);
+}
+
+.applicationCardBody {
+  padding: 0 16px 24px 16px;
+}
+.applicationCardWrapperImage {
+  height: 219px;
+  width: 100%;
+  overflow: hidden;
+}
+.applicationCardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+
+.applicationCardIcon {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-19);
+  background-color: var(--color-23);
+  font-size: 24px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+
+.applicationCardType {
+  color: var(--color-19);
+  position: relative;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.applicationCardType::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 40px;
+  background: var(--color-21);
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -12px;
+}
+
+.applicationCardTitle {
+  color: var(--color-02);
+  text-align: center;
+}
+
+/* hover */
+.applicationCardLink:hover .applicationCardIcon {
+  background-color: var(--color-02);
+  color: var(--color-01);
+  transition: all 0.3s linear;
+}
+
+.applicationCardLink:hover .applicationCardImage {
+  transform: scale(1.2);
+  transition: all 0.3s linear;
+}
+
+.applicationCardLink:hover .applicationCardIconImage {
+  filter: invert(1);
+}

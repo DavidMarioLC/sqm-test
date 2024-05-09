@@ -1,0 +1,39 @@
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 387px; */
+  padding-top: 173px;
+  padding-bottom: 24px;
+}
+
+.card {
+  max-width: 590px;
+  border-radius: 16px;
+  background-color: rgba(0, 51, 161, 0.7);
+  padding: 24px 16px;
+}
+
+.title {
+  color: var(--color-01);
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 40px;
+  bottom: -12px;
+  background-color: var(--color-21);
+}
+
+@media (width>=768px) {
+  .banner {
+    padding-top: 203px;
+    padding-bottom: 48px;
+  }
+  .card {
+    padding: 48px;
+    margin-left: auto;
+  }
+}

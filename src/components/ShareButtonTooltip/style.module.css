@@ -1,0 +1,22 @@
+.socials {
+  font-size: 24px !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: var(--color-02) !important;
+  color: var(--color-01) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 50% !important;
+}
+
+.buttonShared {
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #0033a1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,34 @@
+{
+  "Home": {
+    "title": "Hello world!",
+    "text": "Ours"
+  },
+  "Application": {
+    "type": " Tipo de aplicación"
+  },
+  "FeaturedArticles": {
+    "viewAllCategories": "Ver todas las categorías"
+  },
+  "RelatedVideo": {
+    "title": " Lista de videos"
+  },
+  "NavigationMAC": {
+    "brandsTitle": "Marcas",
+    "applicationsTitle": "Aplicaciones",
+    "categoriesTitle": "Categorias"
+  },
+  "Button": {
+    "download": "Descargar",
+    "share": "Compartir",
+    "downloadBrochure": "Descargar folleto",
+    "downloadSheet": "Descargar hoja de seguridad",
+    "downloadTechnique": "Descargar ficha técnica",
+    "moreOptions": "Más opciones de descarga",
+    "viewAllProducts": "Ver todos los productos",
+    "viewMoreVideos": "Ver más videos"
+  },
+  "disponibility": {
+    "text": "Disponible en",
+    "text2": "text2"
+  }
+}

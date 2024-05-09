@@ -1,0 +1,267 @@
+.header {
+  padding-block: 16px;
+  background-color: var(--color-01);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerContent {
+  display: flex;
+  gap: 8px;
+}
+
+.headerWrapperSearch {
+  flex: 1;
+}
+
+.openMenu {
+  font-size: 24px;
+  color: var(--color-12);
+  background: white;
+  border: none;
+}
+
+/* searchHeader */
+
+.headerSearch {
+  background-color: white;
+  position: relative;
+}
+
+.headerSearchTop {
+  display: flex;
+  border: 1px solid var(--line-01);
+  border-radius: 4px;
+}
+
+.headerSearchButtonBack,
+.headerSearchButtonClear,
+.headerSearchButtonSearch {
+  padding: 0;
+  border: 0;
+  width: 38px;
+  height: 38px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.headerSearchButtonBack {
+  visibility: hidden;
+  width: 0;
+  opacity: 0;
+}
+
+.headerSearchButtonSearch {
+  color: var(--color-02);
+}
+
+.headerSearchButtonBack,
+.headerSearchButtonClear {
+  color: var(--color-20);
+}
+
+.headerSearchInput {
+  border: none;
+  padding-inline: 4px;
+  caret-color: var(--color-12);
+  outline: none;
+  flex: 1;
+}
+
+/* headerSearchResults */
+
+.headerSearchResults {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  top: 70px;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.headerSearchResultsContent {
+  height: 456px;
+  overflow-y: auto;
+  background-color: var(--color-01);
+  border-radius: 0 0 16px 16px;
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+
+  overflow-y: auto;
+}
+
+.headerSearchResultItem {
+  border-bottom: 1px solid var(--line-01);
+  padding-block: 16px;
+  padding-inline: 32px;
+}
+
+.headerSearchResultItem:last-child {
+  border-bottom: none;
+}
+
+.headerSearchResultItem p {
+  color: var(--color-02);
+}
+
+.headerSearchResultItem ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerSearchResultItem li {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.headerSearchResultItem li svg {
+  flex-shrink: 0;
+  font-size: 18px;
+  color: var(--color-12);
+  font-weight: bolder;
+  transform: translateY(2px);
+}
+
+.headerSearchResultItem li a {
+  color: var(--color-09);
+}
+
+.headerSearchResultItem li a:active {
+  text-decoration: underline;
+}
+
+/* animation when the user focus on the search */
+.searchHeaderOpen .headerLogo,
+.searchHeaderOpen .openMenu {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+.searchHeaderOpen .openMenu svg {
+  width: 0;
+}
+
+.searchHeaderOpen .headerSearchButtonBack {
+  visibility: visible;
+  width: 38px;
+  opacity: 1;
+}
+
+.searchHeaderOpen .headerSearchTop {
+  border: none;
+}
+
+.headerSearchResultsOpen {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+/* headerSearcResultsNotFound */
+
+.headerSearcResultsNotFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 32px;
+}
+
+.headerSearcResultsNotFound svg {
+  font-size: 40px;
+  color: var(--color-02);
+}
+
+/**********************************
+  >>Navigation 
+  ***********************************/
+
+/* navigation */
+
+.navigation {
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  position: fixed;
+  inset: 0;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.navigationDefault {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navigationOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* button close */
+.navigationButtonClose {
+  border: none;
+  background: none;
+  color: var(--color-01);
+}
+
+/* item */
+.navigationItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-01);
+  padding-block: 8px;
+}
+
+/* submenu */
+.submenu {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: 250ms linear;
+  height: 100vh;
+  display: flex;
+  z-index: 1;
+}
+
+.submenuDefault {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.submenuOpen {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 250ms linear;
+}
+
+/* submenuTitle */
+.submenuTitle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.312);
+  padding-block: 16px;
+  color: var(--color-01);
+}
+
+.submenuTitle h2 {
+  margin-bottom: 0;
+}

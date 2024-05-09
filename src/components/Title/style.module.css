@@ -1,0 +1,45 @@
+.title {
+  color: var(--color-02);
+  position: relative;
+  font-weight: bold;
+}
+
+.title.center {
+  text-align: center;
+}
+
+/* underline */
+.underline {
+  height: 5px;
+  width: 40px;
+  background: var(--color-21);
+  position: relative;
+  font-size: 5px;
+  margin-top: 16px;
+  color: transparent;
+}
+
+.title.center .underline {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centerMobileAndLeftDesktop {
+  text-align: center;
+}
+
+.title.centerMobileAndLeftDesktop .underline {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (width>=992px) {
+  .title.centerMobileAndLeftDesktop .underline {
+    left: initial;
+    transform: initial;
+  }
+
+  .title.centerMobileAndLeftDesktop {
+    text-align: left;
+  }
+}

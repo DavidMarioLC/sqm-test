@@ -1,0 +1,1 @@
+export { NewRelatedCarousel } from "./NewRelatedCarousel";

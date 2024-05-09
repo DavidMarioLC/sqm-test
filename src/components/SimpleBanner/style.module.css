@@ -1,0 +1,37 @@
+.bannerSimple {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+.bannerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerTitle {
+  color: var(--color-01);
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-top: 24px;
+  margin-bottom: 0;
+}
+
+.bannerSubtitle {
+  color: var(--color-01);
+  font-size: var(--fs-20);
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .bannerSimple {
+    padding-block: 48px;
+    padding-bottom: 96px;
+  }
+
+  .bannerSubtitle {
+    margin-top: 24px;
+    font-size: var(--fs-24);
+  }
+}
