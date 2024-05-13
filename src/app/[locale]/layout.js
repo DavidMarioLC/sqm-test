@@ -38,7 +38,7 @@ export default async function RootLayout({ params, children }) {
     <html lang={params.locale} className={opensans.className}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          // <HeaderRoot isMobile={isMobile} country={country} language={language} />
+  {// <HeaderRoot isMobile={isMobile} country={country} language={language} />}
           <ButtonFixed href="/contacto" icon={<MdOutlineMessage />}>
             Contacto
           </ButtonFixed>
@@ -54,13 +54,3 @@ export default async function RootLayout({ params, children }) {
   );
 }
 
-// RootLayout.getInitialProps = async (context) => {
-//   const ctx = await App.getInitialProps(context);
-//   const cookies = req.cookies;
-//   const codeCountry = cookies.country;
-
-//   return {
-//     ...ctx,
-//     codeCountry,
-//   };
-// };
